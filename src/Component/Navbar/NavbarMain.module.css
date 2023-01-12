@@ -1,0 +1,157 @@
+.Container {
+    display: flex;
+    flex-direction: column;
+}
+
+.Main {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 70px;
+    font-family: "Monserrant";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    width: 100%;
+    color: #ffffff;
+    padding: 0 130px;
+    border-bottom: 1px solid #C4C4C4;
+
+}
+
+.Brand a {
+    font-family: 'Montserrat';
+    font-family: monospace;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 42px;
+    line-height: 51px;
+    list-style-type: none;
+    text-decoration: none;
+    color: #BF0000;
+}
+
+
+
+.Text {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* gap: 20px; */
+}
+
+.Text div {
+    font-style: normal;
+    font-weight: 400px;
+    line-height: 24px;
+    font-size: 18px;
+    color: #000;
+    /* margin: 0 32px; */
+    cursor: pointer;
+    user-select: none;
+}
+
+.Text div a {
+    text-decoration: none;
+    margin: 0 32px;
+    font-style: normal;
+    font-weight: 400px;
+    line-height: 24px;
+    font-size: 18px;
+    color: #000;
+    user-select: none;
+}
+
+.DropDownAndt {
+    border-radius: 11px;
+}
+
+.LearnOpen {
+    width: fit-content;
+    height: fit-content;
+    border: 1px solid #C4C4C4;
+    background-color: white;
+    border-radius: 10px;
+    transition: .4s;
+    position: absolute;
+    top: 80px;
+    left: 36%;
+    overflow: hidden;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    text-align: start;
+
+}
+
+.LearnOpen a {
+    margin: 20px 0px;
+    color: black;
+}
+
+.LearnClose {
+    width: 150px;
+    height: 0px;
+    background-color: white;
+    border-radius: 10px;
+    transition: .4s;
+    position: absolute;
+    top: 50px;
+    overflow: hidden;
+    left: 36%;
+
+}
+
+.Action {
+    display: flex;
+    gap: 20px;
+}
+
+.ButtonNavbar {
+    display: flex;
+    width: 120px;
+    font-family: "Monserrat";
+    font-style: normal;
+    font-weight: 400px;
+    font-size: 14px;
+    line-height: 20px;
+    color: white;
+    border: none;
+
+    justify-content: center;
+    align-items: center;
+    background: #086F6C;
+    border-radius: 11px;
+}
+
+.ButtonNavbar:active {
+    transform: scale(0.98);
+    opacity: 0.7;
+}
+
+.SelectAndt {
+    display: inline;
+    border-radius: 11px;
+}
+.offcanvas{
+    display: flex;
+
+}
+.menu_bar{
+    display: none;
+    /* background-color: #086F6C; */
+ 
+}
+@media (max-width: 767px){
+    .offcanvas{
+        display: none;
+    }
+    
+    .Main{
+        padding: 0 10px ;
+    }
+    .menu_bar{
+        display: block;
+    }
+}
