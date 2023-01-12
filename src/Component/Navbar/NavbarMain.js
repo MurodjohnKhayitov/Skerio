@@ -47,20 +47,16 @@ export default function NavbarMain() {
                             borderBottom: isActive ? '1px solid green' : 'none'
                         })} to="/sportarea">Sport Area</NavLink></div>
 
- 
 
-                        
+
+
                     </div>
                     <div className={styles.Action}>
-                        <button onClick={SignIn} className={styles.ButtonNavbar}>Kirish</button>
-                        {/* {
-                    localStorage.getItem('minidevToken') && (<><button onClick={EnterProfile} className={styles.ButtonNavbar}>Profile</button></>)
-                } */}
                         <Select
                             labelInValue
                             defaultValue={{
-                                value: 'UZB',
-                                label: 'UZB',
+                                value: 'Football',
+                                label: 'Football',
                             }}
                             className={styles.SelectAndt}
                             onChange={handleChange}
@@ -68,6 +64,22 @@ export default function NavbarMain() {
                             <Option value="RUSSIAN">RUSS</Option>
                             <Option value="ENGLISH">ENG</Option>
                         </Select>
+                        <Select
+                            labelInValue
+                            defaultValue={{
+                                value: 'English',
+                                label: 'English',
+                            }}
+                            className={styles.SelectAndt}
+                            onChange={handleChange}
+                        >
+                            <Option value="RUSSIAN">RUSS</Option>
+                            <Option value="ENGLISH">ENG</Option>
+                        </Select>
+                        <button onClick={SignIn} className={styles.ButtonNavbar}>Kirish</button>
+                        {/* {
+                    localStorage.getItem('minidevToken') && (<><button onClick={EnterProfile} className={styles.ButtonNavbar}>Profile</button></>)
+                } */}
                     </div>
                 </div>
                 <div className={styles.menu_bar} >
